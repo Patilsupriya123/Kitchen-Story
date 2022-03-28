@@ -1,0 +1,24 @@
+<app-header></app-header>
+<h3><b>{{title}}</b></h3>
+<nav>
+    <a routerLink="login" ><b> Login</b></a>|
+    <a routerLink="home"><b>Available products</b></a>|
+    <a routerLink="add"><b>Add Product</b></a>|
+    <a routerLink="list"><b>List Products</b></a>|
+    
+    </nav>
+
+<div class="jumbotron" style="background-color: rgb(243, 141, 226);">
+    <div class="container" style="background-color: rgb(250, 9, 190);" >
+    <div class="jumbotron" style="background-color: rgb(142, 227, 248);">
+ <img [src]="imgurl" [height]="h" [width]="w">
+<img [src]="imgurl1" [height]="h" [width]="w">
+<img [src]="imgurl2" [height]="h" [width]="w">
+<img [src]="imgurl3" [height]="h" [width]="w">
+<img [src]="imgurl4" [height]="h" [width]="w">
+</div>
+</div>
+
+<br><br>
+
+<router-outlet></router-outlet>
